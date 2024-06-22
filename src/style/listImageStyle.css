@@ -1,0 +1,36 @@
+
+  
+
+  .liked {
+    color: red; 
+  }
+  
+  .not-liked {
+    color: gray; 
+  }
+
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    position: relative;
+    margin: 10px;
+    width: calc(33.33% - 40px); 
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  .favorite-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
