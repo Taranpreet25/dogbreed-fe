@@ -75,7 +75,11 @@ return (
                     <div key={fav} className="favorite-item">
                       <img src={fav} alt={fav.breed} className="favorite-image" />
                       <button className="favorite-heart" onClick={() => toggleFavorite(fav)}>
-                        <FontAwesomeIcon icon={solidHeart} className="heart-icon" />
+                      {favorites.includes(fav) ? (
+                      <FontAwesomeIcon icon={fasHeart} className="liked" />
+                      ) : (
+                      <FontAwesomeIcon icon={fasHeart} className="not-liked" />
+                      )}
                       </button>
                     </div>
                   ))
